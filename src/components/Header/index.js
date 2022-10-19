@@ -1,10 +1,13 @@
-import {TitleHeader} from './styled'
+import {TitleHeader,Image} from './styled'
 
-export const Header = () => {
+
+export const Header = (props) => {
 
     return(
         <TitleHeader>
-            Insta4
+            {/* <h1>insta4</h1> */}
+            <p >{props.nome}</p>
+            <Image src={props.urlFotoPerfil}></Image>
         </TitleHeader>
     )
 }
